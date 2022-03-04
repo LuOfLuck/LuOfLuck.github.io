@@ -28,26 +28,6 @@ $(document).ready(function() {
       }
       return false;
       
-      // if ( $(this).charAt(0) == '#' ) {
-      //   e.preventDefault();
-
-      //   var self = $(this), target = self.attr('href'), posTar = $(target).offset().top;
-      //   winWidth = $(window).width();
-        
-      //   self.parent().addClass('active');
-      //   self.parent().siblings().removeClass('active');
-        
-      //   $("body, html").animate({
-      //     scrollTop: posTar
-      //   }, 1000 );
-        
-      //   if(winWidth < 600) {
-      //     setTimeout(function() {
-      //       $('.minibar').slideUp();
-      //     }, 500);
-      //   }
-      //   return false;
-      // }
     });
   });
   
