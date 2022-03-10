@@ -119,8 +119,7 @@ a:hover, a:active {
 }
 @media (max-width: 996px) {
     .img-place > img {
-        height: 100%;
-        width: auto;
+        width: 40%;
     }
 }
 /* Overlay */
