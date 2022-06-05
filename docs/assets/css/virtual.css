@@ -120,7 +120,7 @@ a:hover, a:active {
 }
 @media (max-width: 996px) {
     .img-place > img {
-        width: 40%;
+        height: 100%;
     }
 }
 /* Overlay */
@@ -1079,7 +1079,7 @@ a:hover, a:active {
     margin: 0 auto;
     width: 100%;
     max-width: 350px;
-    height: 100%;
+    height: 501px;
     border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
