@@ -66,9 +66,10 @@
     1. Basic
 */
 
-body {
+.body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 .fw-bold {
