@@ -120,10 +120,17 @@ $(document).ready(function() {
   });
   
   $('#change-page').on('change', function() {
-    var url = $(this).val() + '.html';
+    var val = $(this).val();
     
-    if($(this).val()) {
-      window.location.assign(url);
+    if(val) {
+      var isValid = /^[a-zA-Z0-9\-\/]+$/.test(val);
+
+      if (isValid && val.indexOf('://') === -1 && val.indexOf('javascript:') === -1) {
+        var url = val + '.html';
+        window.location.assign(url);
+      } else {
+        console.error('Security Error: Invalid page value selected. Redirection prevented.');
+      }
     }
   });
   
