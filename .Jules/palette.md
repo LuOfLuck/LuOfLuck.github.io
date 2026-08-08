@@ -1,0 +1,3 @@
+## 2025-05-18 - Accessibility improvements and standardizing links
+**Learning:** Found an accessibility issue where icon-only buttons (`navbar-toggler` and `.btn-back_to_top`) were lacking `aria-label`s and `.btn-back_to_top` was implemented as a `<div>` instead of a semantic `<button>`. Also discovered a `<button>` element nested inside an `<a>` tag, which is invalid HTML and can confuse screen readers.
+**Action:** When creating interactions that trigger actions or scroll up, always use semantic `<button>` tags with `aria-label` if there is no text. Never nest a `<button>` inside an `<a>` tag; instead, apply button styles directly to the `<a>` tag and use `rel="noopener noreferrer"` for external or target="_blank" links.
