@@ -1,0 +1,3 @@
+## 2025-02-23 - Interactive elements accessibility
+**Learning:** `div` and `span` elements acting as buttons lack native keyboard support (focusability, 'Enter'/'Space' activation) and semantics for screen readers. In this project, an icon-only "Back to top" button was implemented as a `<div>`, making it inaccessible.
+**Action:** Always replace `<div>` or `<span>` elements that act as buttons with semantic `<button>` elements, add `aria-label`s when they are icon-only, and use existing utility classes (e.g. `border-0 p-0` in Bootstrap) to strip default browser button styles if necessary while preserving accessibility.
